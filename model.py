@@ -1,5 +1,7 @@
 import numpy as np
 
+from sklearn.naive_bayes import GaussianNB
+
 
 class CreditModel:
     def __init__(self):
@@ -7,8 +9,8 @@ class CreditModel:
         Instantiates the model object, creating class variables if needed.
         """
 
-        # TODO: Initialize your model object.
-        pass
+        # Initialize your model object.
+        self.weight = GaussianNB()
 
     def fit(self, X_train, y_train):
         """
@@ -18,8 +20,8 @@ class CreditModel:
         so that you can make predictions on new testing data later on.
         """
 
-        # TODO: Fit your model based on the given X and y.
-        pass
+        # Fit your model based on the given X and y.
+        self.weight.fit(X_train, y_train)
 
     def predict(self, X_test):
         """
@@ -29,5 +31,5 @@ class CreditModel:
         fitting phase to make your prediction on this new testing data.
         """
 
-        # TODO: Predict on `X_test` based on what you learned in the fit phase.
-        return np.random.randint(2, size=len(X_test))
+        # Predict on `X_test` based on what you learned in the fit phase.
+        return self.weight.predict(X_test)
