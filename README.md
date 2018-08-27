@@ -54,6 +54,10 @@ Use the built-in function fit() to train the model
 Step 4:
 Use the built-in function predict() to return the result
 
+Results:
+Accuracy:  38.107%
+Precision: 24.436%
+Recall:    88.568%
 
 ## Data Format
 
