@@ -41,6 +41,19 @@ _Good luck, and have fun with this_! :rocket:
 Give a brief summary of the approach you took, and why! Include your model's
 accuracy/precision/recall scores as well!
 
+Step 1:
+Choosing a model - I've compared between logistic regression and GaussianNB since the data variables are categorical in nature 
+and the outcomes are limited to 2 possible values. I've chosen GaussianNB to maximize recall matrix since it gives the percentage of the actual defaulters that the model will predict.
+
+Step 2:
+Initialize the weight of the model in model.py
+
+Step 3:
+Use the built-in function fit() to train the model
+
+Step 4:
+Use the built-in function predict() to return the result
+
 
 ## Data Format
 
